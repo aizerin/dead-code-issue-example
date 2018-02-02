@@ -1,0 +1,19 @@
+{
+  "name": "minify-example",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack && node bundle.js && rollup -c && node bundleR.js"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-minify-dead-code-elimination": "^0.3.0",
+    "ramda": "^0.25.0",
+    "rollup": "^0.55.3",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-node-resolve": "^3.0.2",
+    "webpack": "^3.10.0"
+  }
+}
